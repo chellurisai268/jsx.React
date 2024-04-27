@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="d2"></div>
+        <script type="text/babel">
+            var obj = [{
+                firstname:'subbu',
+                lastname:'chelluri',
+                age:20,
+                gender:'male'
+            },
+            {
+          firstname:"Rohit",
+          lastname:"Sharma",
+          age:35,
+          gender:'male'
+        },
+        {
+          firstname:"Anuska",
+          lastname:"Sharma",
+          age:50,
+          gender:'female'
+        }
+    ]
+                  
+           
+            var ss= <div>
+
+                {
+                    obj.map((s)=>{
+                        
+                        return <div style={{border:"2px solid",padding:'10px',margin:"10px"}}><h1>{s.firstname} {s.lastname}</h1>
+                               <p>Age: {s.age}</p>
+                               </div>
+                        })
+                }
+                
+                </div> 
+            
+            
+                
+            ReactDOM.render(ss,document.getElementById("d2"))
+        </script>
+    </body>
+</html>

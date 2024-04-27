@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="d2"></div>
+        <script type="text/babel">
+           var ar= [{
+                    firstname:'pravee',
+                    lastname:'gubbala',
+                    age:38
+                },
+                {
+                    firstname:'anupama',
+                    lastname:'reddy',
+                    age:28
+                },
+                {
+                    firstname:'priya',
+                    lastname:'kaman',
+                    age:23
+                },
+                {
+                    firstname:'kiran',
+                    lastname:'rao',
+                    age:25
+                },
+                {
+                    firstname:'triveni',
+                    lastname:'manu',
+                    age:29
+                }
+            ];
+           
+                   
+                  
+             
+         var jsx= <table>
+            <td>Fisrtname</td>
+            <td>Lastname</td>
+            <td>Age</td>
+            <td>options</td>
+            </table>
+            
+            
+            
+            
+                
+            ReactDOM.render(jsx,document.getElementById("d2"))
+        </script>
+    </body>
+</html>

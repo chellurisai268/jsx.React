@@ -1,0 +1,25 @@
+<html>
+ <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>   
+    <body>
+        <ul id="d4"></ul>
+        <script type="text/babel">
+            var ar=[12,33,444,456,876,87]
+            var jsx=<h1>{
+                ar.map((a)=>{
+                    return <li>{a}</li>
+                })
+            }
+            
+            
+        
+        
+            </h1>
+            ReactDOM.render(jsx,document.getElementById("d4"))
+
+        </script>
+    </body>
+</html>

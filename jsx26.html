@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <ol id="f3"></ol>
+        <ul id="f4"></ul>
+        <script type="text/babel">
+            var ar=['dog','cat','pig','mouse','tiger','lion']
+            var jsx= <div><ol>{ar.map((a)=>{return <li>{a}</li>})}</ol><ul>{ar.map((a)=>{return <li>{a}</li>})}</ul></div>
+        
+            ReactDOM.render(jsx,document.getElementById("f3"))
+
+        </script>
+    </body>
+</html>

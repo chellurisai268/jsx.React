@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="d1"></div>
+        <script type="text/babel">
+            var ar=[{
+                Name:"subbu",
+                Gender:"male",
+                Age:20
+            }]
+
+            var jsh1= <h1 style={{}}>
+                {
+                    ar.map((s)=>{
+                        return <div>
+                            {
+                                <div style={{border:'1px solid',padding:"10px",margin:"10px"}}>
+                                <h1>Name:{s.Name}</h1>
+                                <h4>Gender:{s.Gender}</h4>
+                                <i>Age:{s.Age}</i>
+                                </div>
+                            }
+                            </div>
+                    })
+                }
+                </h1>
+            ReactDOM.render(jsh1,document.getElementById("d1"))
+            
+
+        </script>
+    </body>
+</html>
